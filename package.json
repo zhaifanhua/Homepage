@@ -1,0 +1,51 @@
+{
+  "name": "homepage",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Homepage project. An application that displays personal home pages, built on Vue.",
+  "author": {
+    "name": "ZhaiFanhua",
+    "email": "zhaifanhua@foxmail.com",
+    "url": "https://github.com/ZhaiFanhua/Homepage"
+  },
+  "license": "MIT",
+  "homepage": "https://www.zhaifanhua.com",
+  "repository": {
+    "url": "https://github.com/ZhaiFanhua/Homepage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZhaiFanhua/Homepage/issues"
+  },
+  "keywords": [
+    "Vue",
+    "Vite",
+    "TypeScript",
+    "Homepage"
+  ],
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "dev": "vite dev --host",
+    "serve": "vite serve --host",
+    "build": "vue-tsc && vite build",
+    "preview": "npm run build && vite preview",
+    "update-pkg": "ncu --deep -u",
+    "reinstall": "rimraf pnpm-lock.yaml && rimraf package.lock.json && rimraf node_modules && npm run bootstrap"
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.1",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "eslint": "^9.4.0",
+    "prettier": "^3.3.0",
+    "rimraf": "^5.0.7",
+    "stylelint": "^16.6.1",
+    "typescript": "^5.4.5",
+    "unplugin-auto-import": "^0.17.6",
+    "vite": "^5.2.12"
+  },
+  "packageManager": "pnpm@8.1.0"
+}
